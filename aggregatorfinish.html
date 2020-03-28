@@ -1,0 +1,54 @@
+<!--
+    ---basic iteration---
+{{ range $key, $value := .News }}
+ ...do some stuff
+<tr>
+    --create a table row with our variables per item in News--
+    <td><a href="{{ $value.Location }}" target='_blank'>{{ $key }}</td>
+    <td>{{ $value.Keyword }}</td>
+</tr>
+{{ end }} -->
+
+<!--
+    *EXTRA*
+    we improve this page better to see by using DataTables, which is JavaScript plugin.
+    So, we have to bring in jquery, css, and javascript for datatables. To do this, 
+    we have to ...
+        1. add header 
+        2. add some scripts at the end of this template
+        3. give table an id and class to modify
+-->
+
+<head>
+    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+</head>
+
+<!--So, here, each row of our table has the title, which links to the article, 
+and then has all of the keywords in the 2nd column.-->
+
+<h1>{{.Title}}</h1>
+
+<table id="fancytable" class="display">
+    <col width="35%">
+    <col width="65%">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Keywords</th>
+        </tr>
+    </thead>
+    <tbody>
+		{{ range $key, $value := .News }}
+		 <tr>
+            <td><a href="{{ $value.Location }}" target='_blank'>{{ $key }}</td>
+            <td>{{ $value.Keyword }}</td>
+        </tr>
+		{{ end }}
+    </tbody>
+</table>
+
+<script>$(document).ready(function() {
+    $('#fancytable').DataTable();
+} );</script>
