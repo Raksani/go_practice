@@ -1,5 +1,5 @@
 # go_practice<br/>
-All tutorials from sentdex channel on Youtube to learn basic Go language.<br/>
+All tutorials are from sentdex channel on Youtube, to learn about learn basic Go language.<br/>
 ## content<br/>
 1. .go files: code through the tutorials.<br/>
   1.1 gotut1.go: Intro, Syntax, Type, and Pointers<br/>
