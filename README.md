@@ -9,4 +9,9 @@ All tutorials are from sentdex channel on Youtube, to learn about learn basic Go
   1.5 gotut5.go: Web app, (continue from gotut6.go) Mapping, HTML template<br/>
   1.6 gotut6.go: Maping<br/>
   1.7 gotut7.go: Combining all together to create news aggregator web app.<br/>
-2. .pdf file: self-short-note about tips and knowledge that I retrieved from the videos.
+  1.8 gotut8.go: Combining all together to create news aggregator web app.<br/>
+  1.9 gotut9.go: Goroutine Sync, Defer, Panic.<br/>
+  1.10 gotut10.go: Goroutine Sync, Defer, Panic.<br/>
+  1.11 gotut11.go: Goroutine Sync, Defer, Panic.<br/>
+  1.12 gotut12.go: Go Channekl, Iterating Channels (with Defer)<br/>
+2. .pdf file: My handwriting short note (Go_lang_shortnote.pdf) about tips and contents that I've retrieved from videos.
