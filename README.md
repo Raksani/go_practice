@@ -9,7 +9,7 @@ All tutorials are from sentdex channel on Youtube, to learn about learn basic Go
   1.5 gotut5.go: Web app, (continue from gotut6.go) Mapping, HTML template<br/>
   1.6 gotut6.go: Mapping<br/>
   1.7 gotut7.go: Combining all together to create news aggregator web app.<br/>
-  1.8 gotut8.go: Combining all together to create news aggregator web app.<br/>
+  1.8 gotut8.go: Basic goroutine.<br/>
   1.9 gotut9.go: Goroutine Sync, Defer, Panic.<br/>
   1.10 gotut10.go: Goroutine Sync, Defer, Panic.<br/>
   1.11 gotut11.go: Goroutine Sync, Defer, Panic.<br/>
